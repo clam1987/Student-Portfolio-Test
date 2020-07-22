@@ -12,9 +12,9 @@ function App() {
       
     <div className="App">
             <Route exact path="/" component={LandingPage} />
-            <Route exact path="/about" component={About} />
-            <Route exact path="/contact" component={ContactMe} />
-            <Route exact path="/portfolio" component={Portfolio} />
+            <Route exact path={`${process.env.PUBLIC_URL}/about`} component={About} />
+            <Route exact path={`${process.env.PUBLIC_URL}/contact`} component={ContactMe} />
+            <Route exact path={`${process.env.PUBLIC_URL}/portfolio`} component={Portfolio} />
     </div>
     </Router>
   );
