@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from "react-router-dom"
 import "./Navbar.css";
 
 export default function Navbar(){
@@ -6,7 +7,7 @@ export default function Navbar(){
         <div >
         {/* Responsive navigation bar, directs user to About Me, Portfolio, or Contact page */}
             <nav className="navbar navbar-expand-lg navbar-light ">
-            <a className="navbar-brand" href="/" id="logo">Arash Bazrafshan</a>
+            <Link to="/" id="logo" className="navbar-brand">Arash Bazrafshan</Link>
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
                 </button>
@@ -14,7 +15,7 @@ export default function Navbar(){
                 <ul className="navbar-nav mr-auto">
                     {/* List will redirect user to each of the three pages of this web site */}
                     <li className="nav-item">
-                    <a className="nav-link" href="about">About Me <span className="sr-only">(current)</span></a>
+                        <Link className="nav-link" to="/about">About Me <span className="sr-only">(current)</span></Link>
                     </li>
                     <li className="nav-item">
                     <a className="nav-link" href="portfolio">Portfolio <span className="sr-only">(current)</span></a>

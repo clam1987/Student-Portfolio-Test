@@ -12,6 +12,7 @@ function App() {
       
     <div className="App">
             <Route exact path="/" component={LandingPage} />
+            {console.log(process.env.PUBLIC_URL)}
             <Route exact path={`${process.env.PUBLIC_URL}/about`} component={About} />
             <Route exact path={`${process.env.PUBLIC_URL}/contact`} component={ContactMe} />
             <Route exact path={`${process.env.PUBLIC_URL}/portfolio`} component={Portfolio} />
